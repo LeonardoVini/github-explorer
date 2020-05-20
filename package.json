@@ -2,6 +2,7 @@
   "name": "github-explorer",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://leonardovini.github.io/github-explorer",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -22,6 +23,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -52,6 +55,7 @@
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-react": "7.19.0",
     "eslint-plugin-react-hooks": "2.5.0",
+    "gh-pages": "^2.2.0",
     "prettier": "^2.0.5"
   }
 }
